@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Breezy Bite Bakers</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- boxicons -->
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<style>
+     div.new ul li:hover{
+    color: white;
+  }
+
+  div.new ul li:hover{
+    background-color:rgb(237, 87, 33);
+    color: white;
+  }
+  .dropdown-menu a:hover{
+    background-color:silver;
+  }
+          div.cart a:link,
+          div.cart a:visited{
+            background-color:rgb(194, 56, 5);
+            display: block;
+            width: 120px;
+            height: 40px;
+            margin: auto;
+            text-align: center;
+            padding-top: 8px;
+            box-sizing: border-box;
+            color: black;
+            text-decoration: none;
+          
+            border-radius:5px;
+
+          }
+
+          div.cart a:hover{
+            background-color: transparent;
+             border:3px solid orangered; 
+          }
+      	  .card:hover {
+           border-color:orangered; 
+          }
+          .star1{
+            width:100px;
+            height: 40px;
+            /* background-color: blue;
+            position: absolute; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% -50%);
+        }
+        .checked{
+            color: orange;
+        }
+      
+        .card {
+      overflow: hidden;
+    }
+
+    .card:hover img {
+      transform: scale(1.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .card-body {
+      background-color: #f9f9f9;
+      padding: 10px;
+    }
+    .new{
+      text-align: justify;
+    }
+    .new:hover{
+      color: rgb(199, 193, 189);
+    }
+    .new a:hover {
+        background-color:rgb(236, 86, 31);
+        color: white; /* Text color when hovering */
+    }
+
+
+
+</style>
+<body>
+  <!-- start nav bar  -->
+  <div class="new">
+    <div class="container-fluid bg-dark" > 
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" height="50px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="homepage_bs.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutuspage_bs.html" style="text-decoration: none;">About Us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="appetizer_bs.html" style="text-decoration: none;">Appetizers</a></li>
+              <li><a class="dropdown-item" href="bun_item_bs.html">Bun Items  </a></li>
+              <li><a class="dropdown-item" href="bread_bs.html">Bread</a></li>
+              <!-- <li><hr class="dropdown-divider">Bread </li> -->
+              <li><a class="dropdown-item" href="burger_item_bs.html">Burger</a></li>
+              <li><a class="dropdown-item" href="cake_bs.html">Cakes</a></li>
+              <li><a class="dropdown-item" href="submarine_bs.html">Submarine</a></li>
+              <li><a class="dropdown-item" href="submarine_bs.html">Coffee Items </a></li>
+              <li><a class="dropdown-item" href="shorteats_bs.html">Short Eats </a></li>
+              <li><a class="dropdown-item" href="pizza_bs.html">Pizza Items </a></li>
+              <li><a class="dropdown-item" href="soft_drinks_bs.html">Soft drinks</a></li>
+
+            </ul>
+            <li class="nav-item">
+                <a class="nav-link" href="gallery_bs.html" style="text-decoration: none;">Gallery</a>
+              </li>
+              
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="contactus_bs.html" style="text-decoration: none;">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="location_bs.html"><img src="images/location_1.jpg" alt="" height="20px">Location</a>
+          </li>
+          <!-- new -->
+          <li class="nav-item">
+            <a class="nav-link" href="onlinedelivery_bs.html" style="text-decoration: none;"><img src="images/dilvery 2.webp" alt="" height="20px">Online Delivery</a>
+          </li>
+          <!-- new end  -->
+          <li class="nav-item">
+            <a class="nav-link" href="Sign_bs.html" style="text-decoration: none;">Sign Up </a>
+          </li>
+        </ul>
+      
+      </div>
+    </div>
+  </nav>
+</div>
+</div>
+  <!-- end of nav bar  -->
+
+  <!-- start of first card -->
+  <div class="container">
+    <div class="row">
+      <h1 class="text-center"><span style="color: orangered;">Piz</span><Span style="color: orangered;"></Span>za</h1>
+        <hr>
+       
+        
+      <div class="col-lg-4">
+            <div class="card h-100" style="width: 18rem;">
+                <img src="images/chicken_pizza.jpg" class="card-img-top" alt="..." height="240px">
+                <div class="card-body h-100">
+                  <h5 class="text-center">Chicken Pizza </h5>
+                  <hr>
+                   <!-- start customer review   -->
+                  <h6>Customer Review</h6>
+                    <div class="star1">
+                        <span class="fa fa-star fa-1x checked"></span>
+                        <span class="fa fa-star fa-1x checked"></span>
+                        <span class="fa fa-star fa-1x checked"></span>
+                        <span class="fa fa-star fa-1x checked"></span>
+                        <span class="fa fa-star fa-1x checked"></span>
+                    </div>
+                    <div class="input">
+                        <form>
+                            <label for="options"><b>Options</b></label>
+                            <br>
+                            <input type="radio" id="Small" name="fav_selection" value="small">
+                            <label for="html">Small</label><br>
+                            <button class="btn btn-success m-10" style="background-color: orangered;">
+                                RS 1000.00
+                            </button>
+                            <br>
+                            <hr>
+                            <input type="radio" id="Medium" name="fav_selection" value="Medium">
+                            <label for="css">Medium</label><br>
+                            <button class="btn btn-success m-10" style="background-color: orangered;">
+                                RS 1400.00
+                            </button>
+                            <br>
+                            <hr>
+                            <input type="radio" id="Large" name="fav_selection" value="Large">
+                            <label for="javascript">Large</label><br>
+                            <button class="btn btn-success m-10" style="background-color: orangered;">
+                                RS 1900.00
+                            </button>
+                          </form>
+                    </div>
+                    <hr>
+                  <!-- end customer review   -->
+                  
+                <br>
+              
+                <!-- new -->
+                <div class="cart"> <!--new -->
+                  
+                  <a href="cart_bs.html"><i class='bx bxs-cart'></i>Add to Cart</a>
+          
+                </div>
+                  
+                </div>
+              </div>
+        </div>
+        <!-- end of first  card -->
+
+        
+
+       <!-- satrt of second card -->
+       <div class="col-lg-4">
+        <div class="card h-100" style="width: 18rem;">
+            <img src="images/cheese_pizza.cms" class="card-img-top" alt="..." height="230px">
+            <div class="card-body h-20">
+              <h5 class="text-center  "> Cheese Pizza </h5>
+              <hr>
+              
+                  <!-- start customer review   -->
+            <h6>Customer Review</h6>
+                <div class="star1">
+                    <span class="fa fa-star fa-1x checked"></span>
+                    <span class="fa fa-star fa-1x checked"></span>
+                    <span class="fa fa-star fa-1x checked"></span>
+                    <span class="fa fa-star fa-1x"></span>
+                    <span class="fa fa-star fa-1x"></span>
+                </div>
+                <div class="input">
+                    <form>
+                        <label for="options"><b>Options</b></label>
+                        <br>
+                        <input type="radio" id="Small" name="fav_selection" value="small">
+                        <label for="html">Small</label><br>
+                        <button class="btn btn-success m-10" style="background-color: orangered;">
+                            RS 350.00
+                        </button>
+                        <br>
+                        <hr>
+                        <input type="radio" id="Medium" name="fav_selection" value="Medium">
+                        <label for="css">Medium</label><br>
+                        <button class="btn btn-success m-10" style="background-color: orangered;">
+                            RS 800.00
+                        </button>
+                        <br>
+                        <hr>
+                        <input type="radio" id="Large" name="fav_selection" value="Large">
+                        <label for="javascript">Large</label><br>
+                        <button class="btn btn-success m-10" style="background-color: orangered;">
+                            RS 1000.00
+                        </button>
+                      </form>
+                </div>
+                <hr>
+              <!-- end customer review   -->
+              
+            <br>
+            
+            <!-- cart start -->
+            <div class="cart"> <!--new -->
+              
+              <a href="cart_bs.html"><i class='bx bxs-cart'></i>Add to Cart</a>
+      
+            </div>
+             <!-- end cart -->
+            </div>
+          </div>
+    </div>
+    <!-- end of second card -->
+
+
+    <!-- start third card  -->
+    <div class="col-lg-4">
+      <div class="card h-100" style="width: 18rem;">
+          <img src="images/sausage_pizza.jfif" class="card-img-top" alt="..." height="230px">
+          <div class="card-body h-20">
+            <h5 class="text-center  ">Sausage Pizza  </h5>
+            <hr>
+            
+                  <!-- start customer review   -->
+            <h6>Customer Review</h6>
+                <div class="star1">
+                    <span class="fa fa-star fa-1x checked"></span>
+                    <span class="fa fa-star fa-1x checked"></span>
+                    <span class="fa fa-star fa-1x checked"></span>
+                    <span class="fa fa-star fa-1x checked"></span>
+                    <span class="fa fa-star fa-1x"></span>
+                </div>
+                <div class="input">
+                    <form>
+                        <label for="options"><b>Options</b></label>
+                        <br>
+                        <input type="radio" id="Small" name="fav_selection" value="small">
+                        <label for="html">Small</label><br>
+                        <button class="btn btn-success m-10" style="background-color: orangered;">
+                            RS 900.00
+                        </button>
+                        <br>
+                        <hr>
+                        <input type="radio" id="Medium" name="fav_selection" value="Medium">
+                        <label for="css">Medium</label><br>
+                        <button class="btn btn-success m-10" style="background-color: orangered;">
+                            RS 1100.00
+                        </button>
+                        <br>
+                        <hr>
+                        <input type="radio" id="Large" name="fav_selection" value="Large">
+                        <label for="javascript">Large</label><br>
+                        <button class="btn btn-success m-10" style="background-color: orangered;">
+                            RS 1600.00
+                        </button>
+                      </form>
+                </div>
+                <hr>
+              <!-- end customer review   -->
+              
+            <br>
+          
+          <!-- cart start -->
+          <div class="cart"> <!--new -->
+            
+            <a href="cart_bs.html"><i class='bx bxs-cart'></i>Add to Cart</a>
+    
+          </div>
+           <!-- end cart -->
+          </div>
+        </div>
+  </div>
+   <!-- end of third card -->
+  <pre>
+
+  </pre>
+  
+<!-- fouth  card -->
+<div class="col-lg-4">
+    <div class="card h-100" style="width: 18rem;">
+        <img src="images/beef_pizza.jfif" class="card-img-top" alt="..." height="200px">
+        <div class="card-body h-20">
+          <h5 class="text-center  ">Beef Pizza</h5>
+          <hr>
+          <!-- customer review start -->
+             <h6>Customer Review</h6>
+                <div class="star1">
+                    <span class="fa fa-star fa-1x checked"></span>
+                    <span class="fa fa-star fa-1x checked"></span>
+                    <span class="fa fa-star fa-1x checked"></span>
+                    <span class="fa fa-star fa-1x checked"></span>
+                    <span class="fa fa-star fa-1x"></span>
+                </div>
+                <div class="input">
+                    <form>
+                        <label for="options"><b>Options</b></label>
+                        <br>
+                        <input type="radio" id="Small" name="fav_selection" value="small">
+                        <label for="html">Small</label><br>
+                        <button class="btn btn-success m-10" style="background-color: orangered;">
+                            RS 700.00
+                        </button>
+                        <br>
+                        <hr>
+                        <input type="radio" id="Medium" name="fav_selection" value="Medium">
+                        <label for="css">Medium</label><br>
+                        <button class="btn btn-success m-10" style="background-color: orangered;">
+                            RS 1200.00
+                        </button>
+                        <br>
+                        <hr>
+                        <input type="radio" id="Large" name="fav_selection" value="Large">
+                        <label for="Large">Large</label><br>
+                        <button class="btn btn-success m-10" style="background-color: orangered;">
+                            RS 1500.00
+                        </button>
+                      </form>
+                </div>
+                <hr>
+              <!-- end customer review   -->
+              
+            <br>
+        <!-- cart start -->
+        <div class="cart"> <!--new -->
+        <a href="cart_bs.html"><i class='bx bxs-cart'></i>Add to Cart</a>
+        </div>
+         <!-- end cart -->
+        </div>
+      </div>
+  </div>
+  <!-- end of fouth -->
+  
+    
+    </div><!--end of row -->
+  </div><!--container end -->
+  </div>
+  <!-- end of card -->
+  <pre>
+
+
+  
+  </pre>
+
+  <!-- footer start -->
+  <footer class="bg-dark text-white pt-5 pb-4"> 
+
+    <div class="container text-center text-md-left">
+  
+        <div class="row  text-center text-md-left">
+            
+         <div class="col-lg-3 col-md-3 col-xl-3 mx-auto mt-9">
+  
+            <h5 class="text-uppercase mb-4 font-weight-bold text-light">Breesy Bite <span style="color:orangered;">Bakers</span> <img src="images/logo.png" alt="" height="90px"></h5>
+            <p class="new">Since 1980, our bakery near Kandy has grown by 
+              offering quality and affordable products. By 1995, we had seven 
+              locations. In 2000, facing competition, we diversified and now focus on 
+              technology, creating a user-friendly website for younger consumers who 
+              prefer smartphones and the internet.
+            </p>
+            </div>
+  
+            
+            <div class=" new col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Order Now</h5>
+                <p>
+                    <a href="appetizer_bs.html" class="text-white" style="text-decoration: none;">Appetizers</a>
+                </p>
+                <p>
+                    <a href="bun_item_bs.html" class="text-white" style="text-decoration: none;">Bun items</a>
+                </p>
+                <p>
+                    <a href="bread_bs.html" class="text-white" style="text-decoration: none;">Bread</a>
+                </p>
+                <p>
+                    <a href="burger_item_bs.html" class="text-white" style="text-decoration: none;">Burger</a>
+                </p>
+                <p>
+                  <a href="cake_bs.html" class="text-white" style="text-decoration: none;">Cakes </a>
+              </p>
+              <p>
+                <a href="submarine_bs.html" class="text-white" style="text-decoration: none;">Submarine </a>
+            </p>
+              <p>
+                <a href="coffee_items_bs.html" class="text-white" style="text-decoration: none;">Coffee Items</a>
+              </p>
+              <p>
+               <a href="shorteats_bs.html" class="text-white" style="text-decoration: none;">Short Eats</a>
+             </p>
+              <p>
+              <a href="pizza_bs.html" class="text-white" style="text-decoration: none;">Pizza Items</a>
+            </p>
+  
+            <p>
+              <a href="soft_drinks_bs.html" class="text-white" style="text-decoration: none;"> Soft Drinks</a>
+            </p>
+    
+    </div>
+  
+  
+            <div class=" new col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">About</h5>
+  
+                <p>
+                    <a href="contactus_bs.html" class="text-white" style="text-decoration: none;">Contact Us</a>
+                </p>
+                <p>
+                    <a href="Aboutuspage_bs.html" class="text-white" style="text-decoration: none;">About Us</a>
+                </p>
+                <p>
+                    <a href="homepage_bs.html" class="text-white" style="text-decoration: none;">Home</a>
+                </p>
+                <p>
+                  <a href="location_bs.html" class="text-white" style="text-decoration: none;">Location</a>
+              </p>
+              <p>
+                <a href="onlinedelivery_bs.html" class="text-white" style="text-decoration: none;">Online Delivery</a>
+            </p>
+            </div>
+  
+            <div class=" new col-lg-3 col-md-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Detail</h5>
+                <p>
+                    <li class="fas fa-home mr-3">306/17/8 Kandy, Road</li>
+                </p>
+                <p>
+                    <li class="fas fa-home mr-3">+94 76 11 40456</li>
+                </p>
+                <p>
+                    <li class="fas fa-home mr-3">breezybite@gmail.com</li>  
+                </p>
+                
+            </div>
+  
+          <hr class="mb-4">
+  
+          <div class="row align-items-center">
+  
+            <!-- <div class="col-md-10 col-lg-4 pt-4">
+                <a href="#" style="text-decoration: none;"
+                    <strong class="text-warning">The provider</strong>
+                </a>
+                <img src="images/logo.png" alt="" height="150px">
+  
+            </div> -->
+  
+            <div class="col-md-5 col-lg-4 "></div>
+            
+            <div class="text-center text-md-right">
+              <h4>Find us</h4>
+  
+                <ul class="list-unstyled list-inline -pb-8">
+                    <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><a href="https://www.youtube.com/" target="_blank"><i class='bx bxl-youtube' ></i></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><a href="https://web.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><a href="https://www.google.com/" target="_blank"><i class='bx bxl-google'></i></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><a href="https://twitter.com/" target="_blank"><i class='bx bxl-twitter'></i></a>
+                    </li>
+  
+                </ul>
+                <p>® 2024 Breezy Bite Sri Lanka. All Rights Reserved-Published by Mohamed Fazlan</p>
+  
+            </div>
+  
+  
+          </div>
+  
+        </div>
+  
+    </div>
+  
+  </footer> 
+  <!-- end of footer -->
+
+
+  <script src="js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
